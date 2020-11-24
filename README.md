@@ -1,0 +1,1 @@
+This project is to calulate area of rectangle
