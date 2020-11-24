@@ -21,4 +21,10 @@ public class RectangleTest {
         assertEquals(10,actualArea);
 
     }
+    @Test
+    public void shoulReturnAreaOfRectanleForGivenLengthAndWidth()   {
+        Rectangle rect = new Rectangle();
+        int actualArea = rect.calculateArea(10,20);
+        assertEquals(200,actualArea);
+    }
 }
