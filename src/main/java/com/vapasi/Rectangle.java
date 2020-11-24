@@ -2,8 +2,8 @@ package com.vapasi;
 
 public class Rectangle {
 
-    private  int length;
-    private  int width;
+    private int length;
+    private int width;
 
 
     public Rectangle(int length, int width) {
@@ -18,7 +18,7 @@ public class Rectangle {
 
     public int calculatePerimeter() {
 
-        return 16;
+        return 2 * (length + width);
     }
 
 }
