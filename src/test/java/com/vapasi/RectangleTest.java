@@ -9,6 +9,7 @@ public class RectangleTest {
 
     private Rectangle rect;
     private int actualArea;
+    private int actualPerimeter;
 
 
     @Test
@@ -17,4 +18,14 @@ public class RectangleTest {
         actualArea = rect.calculateArea();
         assertEquals(200, actualArea);
     }
+
+    @Test
+    public void shouldReturnSixteenForLengthFiveAndWidthThree(){
+
+        rect = new Rectangle(5,3);
+       actualPerimeter = rect.calculatePerimeter();
+       assertEquals(16,actualPerimeter);
+
+    }
+
 }
