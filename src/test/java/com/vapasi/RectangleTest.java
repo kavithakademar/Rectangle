@@ -21,10 +21,9 @@ public class RectangleTest {
 
     @Test
     public void shouldReturnSixteenForLengthFiveAndWidthThree(){
-
         rect = new Rectangle(5,3);
-       actualPerimeter = rect.calculatePerimeter();
-       assertEquals(16,actualPerimeter);
+        actualPerimeter = rect.calculatePerimeter();
+        assertEquals(16,actualPerimeter);
 
     }
 
