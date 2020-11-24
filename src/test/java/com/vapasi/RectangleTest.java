@@ -26,5 +26,12 @@ public class RectangleTest {
         assertEquals(16,actualPerimeter);
 
     }
+    @Test
+    public void shouldReturnPerimeterForGivenLengthAndWidth(){
+        rect = new Rectangle(10,20);
+        actualPerimeter = rect.calculatePerimeter();
+        assertEquals(60,actualPerimeter);
+
+    }
 
 }
