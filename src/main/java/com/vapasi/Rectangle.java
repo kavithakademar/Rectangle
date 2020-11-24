@@ -2,9 +2,9 @@ package com.vapasi;
 
 public class Rectangle {
 
-    private final int length;
-    private final int width;
-    private int area;
+    private  int length;
+    private  int width;
+
 
     public Rectangle(int length, int width) {
         this.length = length;
@@ -12,7 +12,7 @@ public class Rectangle {
     }
 
     public int calculateArea() {
-        area = length * width;
-        return area;
+
+        return length * width;
     }
 }
