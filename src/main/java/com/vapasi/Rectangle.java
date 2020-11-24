@@ -1,6 +1,6 @@
 package com.vapasi;
 
-public class Rectangle {
+public class Rectangle implements Shape {
 
     private int length;
     private int width;
