@@ -13,17 +13,33 @@ public class RectangleTest {
 
     @Test
     public void shouldReturnAreaOfRectangleForGivenLengthAndWidth() {
-        rect = new Rectangle(10, 20);
+        rect = Rectangle.createRectangle(10, 20);
         actualArea = rect.area();
         assertEquals(200, actualArea);
     }
 
     @Test
-    public void shouldReturnPerimeterForGivenLengthAndWidth() {
-        rect = new Rectangle(10, 20);
+    public void shouldReturnPerimeterOfRectangleForGivenLengthAndWidth() {
+        rect = Rectangle.createRectangle(10, 20);
         actualPerimeter = rect.perimeter();
         assertEquals(60, actualPerimeter);
 
     }
+    @Test
+    public void shouldReturnAreaOfSquareForGivenSide() {
+
+        rect = Rectangle.createSquare(10);
+        int actualArea = rect.area();
+        assertEquals(100, actualArea);
+    }
+
+    @Test
+    public void shouldReturnPerimeterOfSquareForGivenSide() {
+
+        rect = Rectangle.createSquare(15);
+        int actualArea = rect.perimeter();
+        assertEquals(60, actualArea);
+    }
+
 
 }
