@@ -13,4 +13,12 @@ public class RectangleTest {
         int actualArea = rect.calculateArea(0,10);
         assertEquals(0,actualArea);
     }
+
+    @Test
+    public void shoudReturnTenForWidthTwoAndLengthFive()    {
+        Rectangle rect = new Rectangle();
+        int actualArea = rect.calculateArea(5,2);
+        assertEquals(10,actualArea);
+
+    }
 }
