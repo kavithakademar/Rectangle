@@ -11,12 +11,12 @@ public class Rectangle {
         this.width = width;
     }
 
-    public int calculateArea() {
+    public int area() {
 
         return length * width;
     }
 
-    public int calculatePerimeter() {
+    public int perimeter() {
 
         return 2 * (length + width);
     }

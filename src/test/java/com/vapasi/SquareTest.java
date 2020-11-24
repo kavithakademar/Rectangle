@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SquareTest {
 
     @Test
-    public void shoulReturnAreaForGivenSide()  {
+    public void shouldReturnAreaForGivenSide()  {
         Square square = new Square(10);
         int actualArea = square.area();
         assertEquals(100, actualArea);
@@ -16,7 +16,7 @@ public class SquareTest {
     public void shouldReturnPerimeterForGivenSide() {
         Square square = new Square(15);
         int actualArea = square.perimeter();
-        assertEquals(100, actualArea);
+        assertEquals(60, actualArea);
     }
 
 }

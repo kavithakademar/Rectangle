@@ -14,14 +14,14 @@ public class RectangleTest {
     @Test
     public void shouldReturnAreaOfRectangleForGivenLengthAndWidth() {
         rect = new Rectangle(10, 20);
-        actualArea = rect.calculateArea();
+        actualArea = rect.area();
         assertEquals(200, actualArea);
     }
 
     @Test
     public void shouldReturnPerimeterForGivenLengthAndWidth() {
         rect = new Rectangle(10, 20);
-        actualPerimeter = rect.calculatePerimeter();
+        actualPerimeter = rect.perimeter();
         assertEquals(60, actualPerimeter);
 
     }
