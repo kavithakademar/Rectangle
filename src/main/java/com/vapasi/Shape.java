@@ -1,24 +1,24 @@
 package com.vapasi;
 
-public class Rectangle  {
+public class Shape {
 
     private int length;
     private int width;
 
 
-    private Rectangle(int length, int width) {
+    private Shape(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
-    public static Rectangle createRectangle(int length, int width) {
+    public static Shape createRectangle(int length, int width) {
 
-        return new Rectangle(length,  width);
+        return new Shape(length,  width);
 
     }
-    public static Rectangle createSquare(int side) {
+    public static Shape createSquare(int side) {
 
-        return new Rectangle(side, side);
+        return new Shape(side, side);
 
     }
     public int area() {
