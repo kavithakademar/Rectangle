@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShapeTest {
 
-        private int actualArea;
-    private int actualPerimeter;
+    private float actualArea;
+    private float actualPerimeter;
 
 
     @Test
@@ -46,13 +46,14 @@ public class ShapeTest {
 
         Shape circle = Shape.createCircle(10);
          actualArea = circle.area();
-         assertEquals(314,actualArea);
+         assertEquals(314,actualArea,0.001);
    }
     @Test
     public void shouldReturnPerimeterOfCircleForGivenRadius() {
 
         Shape circle = Shape.createCircle(5);
-        actualArea = circle.perimeter();
-        assertEquals(31.4,actualArea);
+        actualPerimeter = circle.perimeter() ;
+        assertEquals(31.4,actualPerimeter,0.001);
     }
+
 }
